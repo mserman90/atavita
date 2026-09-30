@@ -1,4 +1,4 @@
-# 🍲 Anne Menü (annemenu.com.tr) — Teyzelerin Mutfak Panosu
+# 🍲 AtaVita (atavita.com.tr) — Teyzelerin Mutfak Panosu
 
 > **Bu Bir Yemek Sitesi Değil, Teyzelerin Mutfak Panosu.**  
 > Plaza çalışanları ile mahallenin en iyi 3 teyzesini buluşturan, **kâr amacı gütmeyen bir komşu tezgahı**.  
