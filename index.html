@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anne Menü - Bu Bir Yemek Sitesi Değil, Teyzelerin Mutfak Panosu. Plaza çalışanları ile mahallenin en iyi 3 teyzesini buluşturan, kâr amacı gütmeyen komşu tezgahı.">
+  <meta name="theme-color" content="#103B2B">
+  <title>Anne Menü | Teyzelerin Mutfak Panosu (Komşu Tezgahı)</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍲</text></svg>">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Pinned Quick Banner -->
+  <div class="announcement-bar" role="region" aria-label="Pano Bildirisi">
+    <div class="container announcement-inner">
+      <span class="announcement-badge">📌 KOMŞU TEZGAHI</span>
+      <p class="announcement-text">
+        <strong>Bu bir yemek sitesi değil, Teyzelerin Mutfak Panosu'dur.</strong> 
+        Satış yoktur, komisyon yoktur. Tüm ödeme doğrudan teyzeye gider.
+      </p>
+      <a href="#pano-kurallari" class="announcement-link">Kuralları Oku &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="Anne Menü - Teyzelerin Mutfak Panosu">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 14C4 21 8.5 26 16 26C23.5 26 28 21 28 14H4Z" fill="#103B2B"/>
+            <path d="M16 6C16 6 12 9 12 12H20C20 9 16 6 16 6Z" fill="#E06D3B"/>
+            <circle cx="16" cy="4" r="2" fill="#E06D3B"/>
+            <path d="M24 16C26 16 27.5 17.5 27.5 19.5C27.5 21.5 26 23 24 23" stroke="#103B2B" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-title">Anne Menü</span>
+          <span class="logo-tagline">Teyzelerin Mutfak Panosu</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Pano Menüsü">
+        <ul class="nav-list">
+          <li><a href="#pano-kurallari" class="nav-link">Pano Kuralları</a></li>
+          <li><a href="#teyzeler" class="nav-link">3 Mahalle Teyzesi</a></li>
+          <li><a href="#ornek-menu" class="nav-link">Örnek Fit Menü</a></li>
+          <li><a href="#rehber-teyzeler" class="nav-link">Teyzeler Rehberi</a></li>
+          <li><a href="#rehber-musteriler" class="nav-link">Müşteri Rehberi</a></li>
+          <li><a href="#faq" class="nav-link">S.S.S.</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <a href="#teyzeler" class="btn btn-secondary header-btn-secondary">
+          <span>Teyzeleri Gör</span>
+        </a>
+        <a href="#pano-kurallari" class="btn btn-primary header-primary-btn">
+          <span>📌 Kuralları İncele</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menüyü Aç/Kapat">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#pano-kurallari" class="mobile-nav-link">📌 Pano Kuralları (Zorunlu)</a></li>
+        <li><a href="#teyzeler" class="mobile-nav-link">Mahallenin 3 Teyzesi</a></li>
+        <li><a href="#nasil-calisir" class="mobile-nav-link">Nasıl Çalışır? (3 Adım)</a></li>
+        <li><a href="#ornek-menu" class="mobile-nav-link">Örnek Fit Menü & Tahmini Makrolar</a></li>
+        <li><a href="#rehber-teyzeler" class="mobile-nav-link">Teyzeler İçin Mini Rehber</a></li>
+        <li><a href="#rehber-musteriler" class="mobile-nav-link">Müşteriler İçin Akıllı Tüketim</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Sıkça Sorulan Sorular</a></li>
+        <li><a href="#blog-api" class="mobile-nav-link">Sistem & RSS Paneli</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="#teyzeler" class="btn btn-whatsapp btn-full">
+          3 Mahalle Teyzesi ile Doğrudan İletişim
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <div class="hero-badge community-hero-badge">
+            <span class="badge-dot"></span>
+            <span>🏡 Kâr Amacı Gütmeyen Komşu Tezgahı &bull; Sıfır Komisyon</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bu Bir Yemek Sitesi Değil, <br>
+            <span class="text-accent">Teyzelerin Mutfak Panosu.</span>
+          </h1>
+
+          <p class="hero-description">
+            Plaza çalışanları ile mahallenin en iyi 3 teyzesini buluşturan, <strong>kâr amacı gütmeyen bir komşu tezgahı</strong>. 
+            Burada satış yoktur. Aracı veya komisyon kesintisi yoktur. 
+            Tüm alışveriş ve ödeme doğrudan yemeği pişiren teyze ile yiyen arasındadır.
+          </p>
+
+          <!-- Pinned Rule Highlights Box -->
+          <div class="hero-pinned-preview">
+            <div class="pinned-label">
+              <span class="pin-symbol">📌</span>
+              <strong>Sıfır Sorumluluk Modeli & Beyan Esası</strong>
+            </div>
+            <p class="pinned-preview-text">
+              Tezgah yöneticisi satışın tarafı değildir; komisyon almaz, yemeğe/kaba dokunmaz. Para doğrudan teyzeye gider. Gıda güvenliği, hijyen ve teslimat beyanı yemeği üreten teyzeye aittir.
+            </p>
+            <div class="pinned-preview-action">
+              <a href="#pano-kurallari" class="link-styled">5 Pano Kuralını ve Sorumluluk Reddini Oku &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Hero Actions -->
+          <div class="hero-cta-group">
+            <a href="#teyzeler" class="btn btn-primary btn-whatsapp-hero">
+              <span>Mahallenin 3 Teyzesini Gör</span>
+            </a>
+            <a href="#ornek-menu" class="btn btn-secondary">
+              Örnek Menü & Tahmini Makrolar
+            </a>
+          </div>
+
+          <!-- Trust Proof / Highlights -->
+          <div class="hero-trust-list">
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">🤝</span>
+              <span class="trust-label"><strong>%0</strong> Komisyon / Aracı Yok</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">👵</span>
+              <span class="trust-label"><strong>En İyi 3</strong> Mahalle Teyzesi</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">📄</span>
+              <span class="trust-label"><strong>Esnaf Muafiyet</strong> Beyanlı</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">🧼</span>
+              <span class="trust-label"><strong>Hijyen Belgesi</strong> Beyanlı</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Community Stall Showcase -->
+        <div class="hero-visual">
+          <div class="hero-card-showcase">
+            <div class="showcase-glow"></div>
+            
+            <div class="meal-display-card community-display-card">
+              <div class="meal-header">
+                <span class="meal-day-tag">Komşu Tezgahı İlanı</span>
+                <span class="meal-rating">👵 Doğrudan Teyze İletişimi</span>
+              </div>
+
+              <!-- Community Plate Graphic -->
+              <div class="meal-plate-container">
+                <div class="plate-base">
+                  <div class="food-layer food-protein">
+                    <span class="food-emoji">🍗</span>
+                    <span class="food-name">Anne Fırın Hindi</span>
+                  </div>
+                  <div class="food-layer food-grain">
+                    <span class="food-emoji">🌾</span>
+                    <span class="food-name">Siyez Pilavı</span>
+                  </div>
+                  <div class="food-layer food-veg">
+                    <span class="food-emoji">🥬</span>
+                    <span class="food-name">Zeytinyağlı Fasulye</span>
+                  </div>
+                  <div class="food-layer food-side">
+                    <span class="food-emoji">🥣</span>
+                    <span class="food-name">Mevsim Yoğurdu</span>
+                  </div>
+                </div>
+
+                <!-- Floating Badges -->
+                <div class="macro-float macro-float-1">
+                  <span class="macro-val">₺290</span>
+                  <span class="macro-key">ÖĞÜN BAŞINA</span>
+                </div>
+
+                <div class="macro-float macro-float-2">
+                  <span class="macro-val">%100</span>
+                  <span class="macro-key">TEYZENİN EMEĞİ</span>
+                </div>
+
+                <div class="macro-float macro-float-3">
+                  <span class="macro-val">Sıfır</span>
+                  <span class="macro-key">ŞİRKET KOMİSYONU</span>
+                </div>
+              </div>
+
+              <!-- Transparency & Legal Callout -->
+              <div class="community-notice-box">
+                <div class="notice-title">💡 Bilgilendirme Notu</div>
+                <p class="notice-text">
+                  Gıdaya uygun PP5 sızdırmaz ambalajlarda aynı gün taze pişer. Alerjenlerinizi sipariş verirken teyzenize WhatsApp'ta yazılı bildirmeyi unutmayınız.
+                </p>
+              </div>
+
+              <div class="meal-footer">
+                <span class="delivery-time-chip">📦 11:30 - 13:30 Masa Teslimi</span>
+                <span class="pack-type-chip">⏰ Pazar 17:00 Sipariş Kapanışı</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PINNED: Teyzelerin Mutfak Panosu Kuralları ve Sorumluluk Reddi (ZORUNLU BÖLÜM) -->
+    <section class="section pinned-rules-section" id="pano-kurallari">
+      <div class="container">
+        
+        <div class="pinned-board-wrapper">
+          <div class="pinned-ribbon">
+            <span class="pinned-icon">📌</span>
+            <span class="pinned-title">PINNED — OKUNMASI ZORUNLUDUR</span>
+          </div>
+
+          <div class="pinned-header-content text-center">
+            <h2 class="pinned-main-heading">Teyzelerin Mutfak Panosu Kuralları ve Sorumluluk Reddi</h2>
+            <p class="pinned-sub-heading">
+              Bu tezgah ticari bir yemek satış şirketi değildir; komşuluk dayanışması ile plaza çalışanlarını bir araya getiren bağımsız bir duyuru panosudur.
+            </p>
+          </div>
+
+          <div class="rules-numbered-list">
+            
+            <div class="rule-card-item">
+              <div class="rule-index">1</div>
+              <div class="rule-text-content">
+                <h3>Doğrudan İki Taraf Arasında Alışveriş</h3>
+                <p>Bu tezgahta yapılan tüm alışverişler doğrudan yemeği yapan teyze ile yiyen kişi arasındadır. Biz sadece komşuları buluştururuz.</p>
+              </div>
+            </div>
+
+            <div class="rule-card-item">
+              <div class="rule-index">2</div>
+              <div class="rule-text-content">
+                <h3>Sıfır Komisyon ve Tarafsız Yönetici</h3>
+                <p>Bu tezgahın yöneticisi satışın tarafı değildir, komisyon almaz, yemeğe / kaba / kuryeye dokunmaz, gelir elde etmez. Para doğrudan teyzeye gider.</p>
+              </div>
+            </div>
+
+            <div class="rule-card-item">
+              <div class="rule-index">3</div>
+              <div class="rule-text-content">
+                <h3>Mutfak ve Ürün Sorumluluğu</h3>
+                <p>Gıda güvenliği, hijyen, alerjen, teslimat ve iade / devir tüm sorumluluk yemeği üreten teyzeye aittir. El emeği, kendi mutfağının sorumluluğu.</p>
+              </div>
+            </div>
+
+            <div class="rule-card-item">
+              <div class="rule-index">4</div>
+              <div class="rule-text-content">
+                <h3>Yasal ve Hijyen Beyan Esası</h3>
+                <p>Teyzelerimiz Esnaf Vergi Muafiyeti ve Hijyen Belgesine sahip olduğunu beyan eder. Beyan teyzeye aittir.</p>
+              </div>
+            </div>
+
+            <div class="rule-card-item">
+              <div class="rule-index">5</div>
+              <div class="rule-text-content">
+                <h3>Komşuluk Ruhu ve Kabul</h3>
+                <p>Bu tezgaha katılarak bu şartları kabul etmiş sayılırsınız. Sıcak bir komşuluk için kurallara uyalım.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Mandatory Legal Note -->
+          <div class="pinned-legal-disclaimer">
+            <span class="legal-badge">HUKUKİ NOT</span>
+            <p>
+              Bu tezgah bir şirket sitesi değildir, <strong>Teyzelerin Mutfak Panosu’dur</strong>. Sitede listelenen ilanların doğruluğu, içeriği ve sonuçlarından ilan sahibi teyze sorumludur.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Meet The 3 Teyzeler (Mahallenin En İyi 3 Teyzesi) -->
+    <section class="section teyzeler-section" id="teyzeler">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-eyebrow">MAHALLENİN EN İYİ 3 TEYZESİ</span>
+          <h2 class="section-heading">Teyzelerimizle Tanışın</h2>
+          <p class="section-subtext">
+            Aracı şirket veya çağrı merkezi yok. Bölgenizdeki teyzeyi seçin, doğrudan WhatsApp üzerinden iletişime geçin.
+          </p>
+        </div>
+
+        <div class="teyzeler-grid">
+          
+          <!-- Teyze 1: Fatma Teyze -->
+          <div class="teyze-card">
+            <div class="teyze-card-header">
+              <div class="teyze-avatar">
+                <span class="avatar-emoji">👵</span>
+                <span class="verified-check" title="Beyan Verildi">&#10003;</span>
+              </div>
+              <div class="teyze-title-wrap">
+                <h3 class="teyze-name">Fatma Teyze</h3>
+                <span class="teyze-region">📍 Maslak & Levent Bölgesi</span>
+              </div>
+            </div>
+
+            <div class="teyze-specialty">
+              <strong>Mutfak İmzası:</strong> Anadolu Tencere Yemekleri, Fırın Hindi But, Siyez Bulguru & İlikli Kemik Suyu.
+            </div>
+
+            <!-- Declarations -->
+            <div class="teyze-declarations-list">
+              <div class="dec-item">
+                <span class="dec-icon">📄</span>
+                <span>Esnaf Muafiyet Belgesi Beyanlı</span>
+              </div>
+              <div class="dec-item">
+                <span class="dec-icon">🧼</span>
+                <span>Halk Eğitim Hijyen Belgesi Beyanlı</span>
+              </div>
+              <div class="dec-item">
+                <span class="dec-icon">◫</span>
+                <span>PP5 Sertifikalı Sızdırmaz Kap Kullanır</span>
+              </div>
+            </div>
+
+            <div class="teyze-price-row">
+              <div class="teyze-price-box">
+                <span class="teyze-price-val">₺1.450</span>
+                <span class="teyze-price-sub">/ 5 Günlük Fit Paket (₺290/öğün)</span>
+              </div>
+              <span class="direct-badge">Doğrudan Teyzeye Ödenir</span>
+            </div>
+
+            <div class="teyze-action">
+              <a href="https://wa.me/905550004321?text=Merhaba%20Fatma%20Teyze%2C%20Mutfak%20Panosu%27ndan%20ula%C5%9F%C4%B1yorum.%205%20G%C3%BCnl%C3%BCk%20Fit%20Paketiniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-whatsapp btn-full"
+                 aria-label="Fatma Teyze ile WhatsApp üzerinden görüş">
+                <span>Fatma Teyze'ye WhatsApp'tan Yaz</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Teyze 2: Hatice Teyze -->
+          <div class="teyze-card teyze-card-featured">
+            <div class="teyze-featured-badge">Haftanın Komşu Tercihi</div>
+            <div class="teyze-card-header">
+              <div class="teyze-avatar">
+                <span class="avatar-emoji">👩‍🍳</span>
+                <span class="verified-check" title="Beyan Verildi">&#10003;</span>
+              </div>
+              <div class="teyze-title-wrap">
+                <h3 class="teyze-name">Hatice Teyze</h3>
+                <span class="teyze-region">📍 Ataşehir & Finans Merkezi Bölgesi</span>
+              </div>
+            </div>
+
+            <div class="teyze-specialty">
+              <strong>Mutfak İmzası:</strong> Soğuk Sıkım Ege Zeytinyağlıları, Yağsız Dana Anne Köftesi & Taze Fırın Balık.
+            </div>
+
+            <!-- Declarations -->
+            <div class="teyze-declarations-list">
+              <div class="dec-item">
+                <span class="dec-icon">📄</span>
+                <span>Esnaf Muafiyet Belgesi Beyanlı</span>
+              </div>
+              <div class="dec-item">
+                <span class="dec-icon">🧼</span>
+                <span>Halk Eğitim Hijyen Belgesi Beyanlı</span>
+              </div>
+              <div class="dec-item">
+                <span class="dec-icon">◫</span>
+                <span>PP5 Sertifikalı Sızdırmaz Kap Kullanır</span>
+              </div>
+            </div>
+
+            <div class="teyze-price-row">
+              <div class="teyze-price-box">
+                <span class="teyze-price-val">₺1.450</span>
+                <span class="teyze-price-sub">/ 5 Günlük Fit Paket (₺290/öğün)</span>
+              </div>
+              <span class="direct-badge">Doğrudan Teyzeye Ödenir</span>
+            </div>
+
+            <div class="teyze-action">
+              <a href="https://wa.me/905550004322?text=Merhaba%20Hatice%20Teyze%2C%20Mutfak%20Panosu%27ndan%20ula%C5%9F%C4%B1yorum.%205%20G%C3%BCnl%C3%BCk%20Fit%20Paketiniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-whatsapp btn-full"
+                 aria-label="Hatice Teyze ile WhatsApp üzerinden görüş">
+                <span>Hatice Teyze'ye WhatsApp'tan Yaz</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Teyze 3: Emine Teyze -->
+          <div class="teyze-card">
+            <div class="teyze-card-header">
+              <div class="teyze-avatar">
+                <span class="avatar-emoji">👵</span>
+                <span class="verified-check" title="Beyan Verildi">&#10003;</span>
+              </div>
+              <div class="teyze-title-wrap">
+                <h3 class="teyze-name">Emine Teyze</h3>
+                <span class="teyze-region">📍 4. Levent & Zincirlikuyu Bölgesi</span>
+              </div>
+            </div>
+
+            <div class="teyze-specialty">
+              <strong>Mutfak İmzası:</strong> Sebzeli Anne Tas Kebabı, Katkısız Probiyotik Köy Yoğurdu & Karabuğday Pilavı.
+            </div>
+
+            <!-- Declarations -->
+            <div class="teyze-declarations-list">
+              <div class="dec-item">
+                <span class="dec-icon">📄</span>
+                <span>Esnaf Muafiyet Belgesi Beyanlı</span>
+              </div>
+              <div class="dec-item">
+                <span class="dec-icon">🧼</span>
+                <span>Halk Eğitim Hijyen Belgesi Beyanlı</span>
+              </div>
+              <div class="dec-item">
+                <span class="dec-icon">◫</span>
+                <span>PP5 Sertifikalı Sızdırmaz Kap Kullanır</span>
+              </div>
+            </div>
+
+            <div class="teyze-price-row">
+              <div class="teyze-price-box">
+                <span class="teyze-price-val">₺1.450</span>
+                <span class="teyze-price-sub">/ 5 Günlük Fit Paket (₺290/öğün)</span>
+              </div>
+              <span class="direct-badge">Doğrudan Teyzeye Ödenir</span>
+            </div>
+
+            <div class="teyze-action">
+              <a href="https://wa.me/905550004323?text=Merhaba%20Emine%20Teyze%2C%20Mutfak%20Panosu%27ndan%20ula%C5%9F%C4%B1yorum.%205%20G%C3%BCnl%C3%BCk%20Fit%20Paketiniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-whatsapp btn-full"
+                 aria-label="Emine Teyze ile WhatsApp üzerinden görüş">
+                <span>Emine Teyze'ye WhatsApp'tan Yaz</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section (3 Steps) -->
+    <section class="section how-it-works-section" id="nasil-calisir">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-eyebrow">KOMŞULUK DÖNGÜSÜ</span>
+          <h2 class="section-heading">Nasıl Çalışır?</h2>
+          <p class="section-subtext">3 Adımda mahallenin teyzesiyle doğrudan bağlantı kurun.</p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-number">01</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 2v4M8 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                  <path d="m9 16 2 2 4-4"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Haftalık Menünü & Teyzeni Seç</h3>
+            <p class="step-desc">
+              Bölgenize en yakın teyzenin hazırladığı haftalık yüksek proteinli, katkısız ev yemekleri menüsünü inceleyin.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card step-highlighted">
+            <div class="step-header">
+              <span class="step-number">02</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Pazar 17:00'ye Kadar WhatsApp'tan Yaz</h3>
+            <p class="step-desc">
+              Teyzenin taze malzeme tedariği yapabilmesi ve emeğin ziyan olmaması için Pazar 17:00'ye kadar doğrudan teyzenin WhatsApp hattına yazıp kaydınızı başlatın. Varsa alerjeninizi açıkça belirtin.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-number">03</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="3" width="15" height="13"/>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 8"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/>
+                  <circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Her Gün 11:30 - 13:30 Arası Masana Gelsin</h3>
+            <p class="step-desc">
+              Hafta içi 5 gün boyunca, gıdaya uygun PP5 sızdırmaz kaplarda sıcacık anne yemeği doğrudan ofisinize teslim edilsin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Fit Menu Section (With "Tahmini Değerdir" Notice) -->
+    <section class="section sample-menu-section" id="ornek-menu">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-eyebrow">ŞEFFAF İLAN DETAYLARI</span>
+          <h2 class="section-heading">Örnek Fit Haftalık Menü</h2>
+          <p class="section-subtext">
+            Teyzelerimizin mutfağında pişen örnek tabaklar. Katkısız, saf zeytinyağlı ve yüksek proteinli ev yemekleri.
+          </p>
+        </div>
+
+        <!-- Day Filter Tabs -->
+        <div class="day-tabs-container">
+          <div class="day-tabs" role="tablist" aria-label="Haftanın Günleri">
+            <button class="day-tab active" role="tab" aria-selected="true" aria-controls="menu-day-content" data-day="pazartesi">Pazartesi</button>
+            <button class="day-tab" role="tab" aria-selected="false" aria-controls="menu-day-content" data-day="sali">Salı</button>
+            <button class="day-tab" role="tab" aria-selected="false" aria-controls="menu-day-content" data-day="carsamba">Çarşamba</button>
+            <button class="day-tab" role="tab" aria-selected="false" aria-controls="menu-day-content" data-day="persembe">Perşembe</button>
+            <button class="day-tab" role="tab" aria-selected="false" aria-controls="menu-day-content" data-day="cuma">Cuma</button>
+          </div>
+        </div>
+
+        <!-- Menu Display Card Container -->
+        <div class="menu-display-wrapper" id="menu-day-content">
+          <div class="menu-card-full" id="active-menu-card">
+            <!-- Dynamic Content Injected by app.js -->
+          </div>
+        </div>
+
+        <!-- Mandatory Macro Notice (Ethical Rule: Tahmini Değerdir) -->
+        <div class="macro-explainer-banner">
+          <div class="explainer-icon" aria-hidden="true">⚠️</div>
+          <div class="explainer-content">
+            <h4 class="explainer-title">Önemli Besin Değeri & Alerjen Uyarısı</h4>
+            <p class="explainer-text">
+              Yukarıda listelenen kalori ve makro değerleri teyzelerimizin ev reçetelerine dayalı <strong>tahmini değerlerdir, endüstriyel laboratuvar ölçümü değildir</strong>.
+              Gluten, süt ürünleri, kuruyemiş vb. herhangi bir alerjiniz varsa sipariş esnasında WhatsApp üzerinden <strong>teyzenize yazılı olarak bildirmek müşterinin sorumluluğundadır</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEYZELER İÇİN: Yasal ve Etik Mini Rehber (Sıfır Sorumluluk Modeli) -->
+    <section class="section teyzeler-guide-section" id="rehber-teyzeler">
+      <div class="container">
+        
+        <div class="guide-box-wrapper teyzeler-guide-box">
+          <div class="guide-header">
+            <span class="guide-tag">TEYZELER İÇİN</span>
+            <h2 class="guide-main-title">Yasal ve Etik Mini Rehber</h2>
+            <p class="guide-summary-text">
+              Sıfır sorumluluk modeli korunur: beyan sizden, sorumluluk sizde. Tezgah sadece hatırlatır, denetlemez.
+            </p>
+            <span class="guide-meta-chip">⏱️ 6 adım &bull; 2 dakikada oku</span>
+          </div>
+
+          <div class="guide-steps-grid">
+            
+            <!-- Step 1 -->
+            <div class="guide-step-card">
+              <div class="step-badge-type legal">YASAL</div>
+              <div class="step-card-icon">📄</div>
+              <h3 class="step-card-heading">Esnaf Muafiyet Belgesi al, yanında taşı.</h3>
+              <p class="step-card-body">
+                Vergi Dairesi'nden ücretsiz. Evde ürettiğini satıyorsan muafiyet belgesi beyanı panoda zorunlu. Fotoğrafını ilana ekle.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="guide-step-card">
+              <div class="step-badge-type legal">YASAL</div>
+              <div class="step-card-icon">🧼</div>
+              <h3 class="step-card-heading">Hijyen Belgesi olmadan asla pişirme.</h3>
+              <p class="step-card-body">
+                Halk Eğitim merkezlerinden alınır. Belgen yoksa ilan açma. Tezgah belgeyi kontrol etmez, beyan senin sorumluluğunda.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="guide-step-card">
+              <div class="step-badge-type legal">YASAL</div>
+              <div class="step-card-icon">◫</div>
+              <h3 class="step-card-heading">Kapların gıdaya uygunluk faturası ve sertifikasını sakla.</h3>
+              <p class="step-card-body">
+                En ucuz kap bile belgeli olmalı. PP5 / cam ibareli, sızdırmaz, mikrodalga uygun kap kullan. Faturayı 1 yıl sakla.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="guide-step-card">
+              <div class="step-badge-type ethical">ETİK</div>
+              <div class="step-card-icon">⚠️</div>
+              <h3 class="step-card-heading">Alerjen yaz. Makroyu 'tahmini' diye belirt.</h3>
+              <p class="step-card-body">
+                “İçinde ceviz, gluten, süt var” diye mutlaka yaz. Tahmini makro yazarken yanına “tahmini değerdir, laboratuvar ölçümü değildir” ekle.
+              </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="guide-step-card">
+              <div class="step-badge-type ethical">ETİK</div>
+              <div class="step-card-icon">🍲</div>
+              <h3 class="step-card-heading">Aynı gün pişir, aynı gün teslim et.</h3>
+              <p class="step-card-body">
+                Dünden kalanı satma. Fotoğraftaki ile gönderdiğin aynı olsun. Ne görüyorsa onu yesin — teyze lezzetine güven böyle kurulur.
+              </p>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="guide-step-card">
+              <div class="step-badge-type ethical">ETİK</div>
+              <div class="step-card-icon">🤝</div>
+              <h3 class="step-card-heading">İptal / devir sözünü tut.</h3>
+              <p class="step-card-body">
+                1 gün önceden haber verene hakkını haftaya devret. Son dakika iptallerde emeğin çöpe gitmesin diye Pazar 17:00 cut-off kuralını net uygula.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="guide-legal-footer-note">
+            <em>Not: Bu rehber bilgilendirmedir, hukuki danışmanlık değildir. Beyan ve belgelerden ilan sahibi sorumludur.</em>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MÜŞTERİLER İÇİN: Akıllı Tüketim Rehberi -->
+    <section class="section customers-guide-section" id="rehber-musteriler">
+      <div class="container">
+        
+        <div class="guide-box-wrapper customers-guide-box">
+          <div class="guide-header">
+            <span class="guide-tag client-tag">MÜŞTERİLER İÇİN</span>
+            <h2 class="guide-main-title">Akıllı Tüketim Rehberi</h2>
+            <p class="guide-summary-text">
+              Para direkt teyzeye gider, muhatap teyzedir. Tezgah araya girmez — bu yüzden birkaç kural hayat kurtarır.
+            </p>
+            <span class="guide-meta-chip">💡 Etik + pratik &bull; 4 adım</span>
+          </div>
+
+          <div class="client-steps-grid">
+            
+            <!-- Step 1 -->
+            <div class="client-step-card">
+              <div class="client-step-icon">🎯</div>
+              <h3 class="client-step-title">Sorumluluk sende</h3>
+              <p class="client-step-desc">
+                Para direkt teyzeye gittiği için muhatabın teyze. Sorunu önce teyzeyle çöz. Tezgah satış yapmaz, hakemlik yapmaz.
+              </p>
+              <div class="role-line-tag">
+                <strong>Muhatap:</strong> teyze &bull; <strong>Tezgah:</strong> sadece kuralı hatırlatır
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="client-step-icon-wrap client-step-card">
+              <div class="client-step-icon">💬</div>
+              <h3 class="client-step-title">Alerjenini söyle</h3>
+              <p class="client-step-desc">
+                Sipariş verirken alerjini WhatsApp'ta yazılı olarak teyzeye bildir. “Fıstığa alerjim var” gibi net yaz.
+              </p>
+              <div class="role-line-tag">
+                <strong>Muhatap:</strong> teyze &bull; <strong>Tezgah:</strong> sadece kuralı hatırlatır
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="client-step-card">
+              <div class="client-step-icon">◫</div>
+              <h3 class="client-step-title">Kapları iade etme</h3>
+              <p class="client-step-desc">
+                Tek kullanımlık kaplar teyzede kalır, yıkanıp tekrar kullanılmaz. Sızdırmaz kap maliyeti teyzeye aittir.
+              </p>
+              <div class="role-line-tag">
+                <strong>Muhatap:</strong> teyze &bull; <strong>Tezgah:</strong> sadece kuralı hatırlatır
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="client-step-card">
+              <div class="client-step-icon">⏰</div>
+              <h3 class="client-step-title">Cut-off'a uy</h3>
+              <p class="client-step-desc">
+                Pazar 17:00 cut-off'a uy. Son dakika iptalleri teyzenin emeğini çöpe atar. İptal edeceksen 1 gün önceden yaz.
+              </p>
+              <div class="role-line-tag">
+                <strong>Muhatap:</strong> teyze &bull; <strong>Tezgah:</strong> sadece kuralı hatırlatır
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Subscription Package (5 Days Fit Package - Direct to Auntie) -->
+    <section class="section package-section" id="paket">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-eyebrow">TEK MODEL: 5 GÜNLÜK FİT PAKET</span>
+          <h2 class="section-heading">Komisyonsuz, Doğrudan Teyzeye</h2>
+          <p class="section-subtext">Ödeme aracısız, komisyonsuz olarak doğrudan el emeğini üreten teyzenin hesabına gider.</p>
+        </div>
+
+        <div class="pricing-card-spotlight">
+          <div class="card-badge-top">Haftalık Sadece 150 Ofis Çalışanı Kontenjanı</div>
+          
+          <div class="pricing-card-main-grid">
+            <div class="pricing-info-col">
+              <span class="package-name">5 GÜNLÜK KOMŞU TEZGAHI PAKETİ</span>
+              <h3 class="package-headline">Hafta İçi Her Gün Sıcak Anne Yemeği Masanızda</h3>
+              <p class="package-subhead">
+                Pazartesi'den Cuma'ya kadar 5 gün boyunca seçtiğiniz mahalle teyzesinin taze pişirdiği fit öğle yemeği ofisinize ulaşır.
+              </p>
+
+              <div class="pricing-features-list">
+                <div class="feature-item">
+                  <span class="feat-icon" aria-hidden="true">&check;</span>
+                  <div class="feat-content">
+                    <strong>Aracısız Komşuluk Fiyatı:</strong>
+                    <span>Komisyon kesintisi olmadığı için restorana kıyasla hem daha sağlıklı hem çok daha ekonomik.</span>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <span class="feat-icon" aria-hidden="true">&check;</span>
+                  <div class="feat-content">
+                    <strong>Tahmini 40-50g Saf Protein Gücü:</strong>
+                    <span>Öğleden sonraki toplantılarda zinde ve enerjik kalın.</span>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <span class="feat-icon" aria-hidden="true">&check;</span>
+                  <div class="feat-content">
+                    <strong>1 Gün Önceden Haber Vererek Devir:</strong>
+                    <span>Dışarıda toplantınız olduğunda 1 gün önceden teyzenize yazarak hakkınızı sonraki haftaya devredebilirsiniz.</span>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <span class="feat-icon" aria-hidden="true">&check;</span>
+                  <div class="feat-content">
+                    <strong>Sertifikalı PP5 Eko-Ambalaj:</strong>
+                    <span>Sızdırmaz, mikrodalga uyumlu, geri dönüştürülebilir gıda kapları.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price Breakdown Side -->
+            <div class="pricing-box-col">
+              <div class="price-box-card">
+                <span class="price-box-title">Haftalık Paket Bedeli</span>
+                <div class="price-amount-box">
+                  <span class="currency">₺</span>
+                  <span class="value">1.450</span>
+                  <span class="duration">/ hafta</span>
+                </div>
+                
+                <div class="price-daily-breakdown">
+                  <span class="daily-badge">Öğün Başı Yalnızca <strong>₺290</strong></span>
+                </div>
+
+                <div class="comparison-note">
+                  <div class="note-row">
+                    <span>Plaza Restoranı / Fast Food:</span>
+                    <span class="strike">₺400 &times; 5 = ₺2.000+</span>
+                  </div>
+                  <div class="note-row highlight">
+                    <span>Doğrudan Teyzeye Ödenen:</span>
+                    <strong>₺1.450 (%0 Komisyon)</strong>
+                  </div>
+                </div>
+
+                <div class="price-action">
+                  <a href="#teyzeler" class="btn btn-whatsapp btn-full btn-lg">
+                    <span>3 Teyzeden Birini Seç & Abone Ol</span>
+                  </a>
+                </div>
+
+                <div class="lock-notice">
+                  <span class="lock-icon" aria-hidden="true">🔒</span>
+                  <span>Sitede kart geçmez. Ödeme doğrudan teyzenin IBAN'ına veya elden yapılır.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section: Sık Sorulanlar — Sıfır Sorumluluk -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-title-wrap text-center">
+          <span class="section-eyebrow">SIK SORULANLAR — SIFIR SORUMLULUK</span>
+          <h2 class="section-heading">Sık Sorulan Sorular</h2>
+          <p class="section-subtext">Tüm sorular “para kime gidiyor, muhatap kim” ekseninde yanıtlanır. Tezgah satış yapmaz.</p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          
+          <!-- Question 1 (Open by default) -->
+          <div class="faq-item active">
+            <button class="faq-trigger" aria-expanded="true" aria-controls="faq-ans-1">
+              <span class="faq-question">Neden para size gelmiyor?</span>
+              <span class="faq-icon" aria-hidden="true">&minus;</span>
+            </button>
+            <div class="faq-content" id="faq-ans-1">
+              <div class="faq-body">
+                Çünkü bu bir şirket değil, <strong>Teyzelerin Mutfak Panosu</strong>. Tezgah yöneticisi satışın tarafı değildir, komisyon almaz, gelir elde etmez. Para doğrudan teyze IBAN'ına gider. Böylece sorumluluk da net: üreten ve yiyen arasında.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-2">
+              <span class="faq-question">Kapları kim sağlıyor?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-2" hidden>
+              <div class="faq-body">
+                Kapları yemeği pişiren teyze sağlar. Gıdaya uygunluk faturası ve sertifikası olan (PP5 / cam ibareli, sızdırmaz, mikrodalga uygun) tek kullanımlık kapların masrafı ve tedariği teyzeye aittir. Kaplar teyzede kalır, yıkanıp iade edilmez.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-3">
+              <span class="faq-question">Bir sorun yaşarsam muhatap kim?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-3" hidden>
+              <div class="faq-body">
+                <strong>Doğrudan teyze.</strong> Gıda güvenliği, hijyen, alerjen, teslimat, iade/devretme tüm sorumluluk yemeği üreten teyzeye aittir. Tezgah sadece kuralı hatırlar, araya girmez.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-4">
+              <span class="faq-question">Siz şirket misiniz? Fatura kesiyor musunuz?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-4" hidden>
+              <div class="faq-body">
+                Hayır. Bu tezgah bir şirket sitesi veya ticari işletme değildir, fatura kesmez. Burası kâr amacı gütmeyen Teyzelerin Mutfak Panosu’dur. Teyzelerimiz Esnaf Vergi Muafiyeti belgesi beyanıyla kendi mutfaklarında üretirler. Tezgah ticari taraf veya aracı değildir.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-5">
+              <span class="faq-question">Alerjen ve diyet bilgilerini kim veriyor?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-5" hidden>
+              <div class="faq-body">
+                Yemeği üreten teyze verir. Panodaki makro ve kalori değerleri teyzenin mutfağına ait tahmini değerlerdir, endüstriyel laboratuvar ölçümü değildir. Alerjeninizi sipariş verirken WhatsApp üzerinden teyzenize yazılı bildirmeniz zorunludur.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-6">
+              <span class="faq-question">Teslimat nasıl oluyor?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-6" hidden>
+              <div class="faq-body">
+                Teslimat tamamen teyzenin organizasyonundadır. Hafta içi her gün 11:30 - 13:30 saatleri arasında, sızdırmaz termo kaplarda doğrudan ofisinize ulaştırılır. Tezgah kuryeye dokunmaz, teslimat teyze ile yiyen arasındadır.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Etik Beyan Card -->
+        <div class="etik-beyan-wrapper">
+          <div class="etik-beyan-badge">
+            <span class="heart-symbol">♥</span>
+            <span>Etik Beyan</span>
+          </div>
+          <p class="etik-beyan-statement">
+            Bu tezgah kâr amacı gütmez. Amaç israfı azaltmak, ev emeğini değerlendirmek ve plaza çalışanına temiz içerik sunmaktır. Para teyzeye gider, kap ve kurye teyzeye aittir, satış yoktur. Tezgah sadece kuralları hatırlatır. Burası Teyzelerin Mutfak Panosu.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Architecture & RSS Integration Section (IETF Standards, Quota Manager & Mock Data Prohibition) -->
+    <section class="section api-architecture-section" id="blog-api">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="section-eyebrow">DİNAMİK VERİ & RSS ENTEGRASYON MİMARİSİ</span>
+          <h2 class="section-heading">Teyze Mutfağı & Sağlık Haberleri (RSS)</h2>
+          <p class="section-subtext">
+            Sistemimiz IETF standartlarına tam uyumlu; RFC 6585 (429 Too Many Requests & Retry-After), 
+            Kota Yönetimi (%80 limit uyarısı) ve Exponential Backoff (jitter ile) mimarisiyle çalışır.
+          </p>
+        </div>
+
+        <!-- Live Architecture Control & Monitor Panel -->
+        <div class="api-monitor-panel">
+          
+          <div class="monitor-metrics-grid">
+            <div class="metric-card">
+              <span class="metric-label">API Kota Kullanımı (Oturum / Gün)</span>
+              <div class="metric-bar-wrapper">
+                <div class="metric-bar-fill" id="quota-progress-bar" style="width: 0%;"></div>
+              </div>
+              <div class="metric-sub-detail">
+                <span id="quota-usage-text">0 / 50 İstek (%0)</span>
+                <span class="quota-badge" id="quota-status-badge">Normal</span>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <span class="metric-label">Son Yanıt / IETF Durumu</span>
+              <div class="metric-value-text" id="ietf-status-display">Beklemede (200 OK)</div>
+              <div class="metric-sub-detail">
+                <span>X-RateLimit: <strong id="ratelimit-header-info">Algılanmadı</strong></span>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <span class="metric-label">Geri Çekilme (Backoff + Jitter)</span>
+              <div class="metric-value-text" id="backoff-status-display">Aktif Değil (0ms)</div>
+              <div class="metric-sub-detail">
+                <span>Algoritma: 2^n * 1000ms + Jitter</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alert Banner for Quota Warnings -->
+          <div class="quota-warning-banner" id="quota-warning-banner" role="alert" style="display: none;">
+            <span class="alert-icon" aria-hidden="true">⚠️</span>
+            <div class="alert-content">
+              <strong>SİSTEM UYARISI:</strong>
+              <span id="quota-warning-message">API kota sınırının %80'ine ulaşıldı. Lütfen istek sıklığını azaltın.</span>
+            </div>
+          </div>
+
+          <!-- RSS Source Selector -->
+          <div class="feed-controls-wrap">
+            <label for="rss-url-input" class="feed-input-label">
+              Hedef RSS Kaynağı (rss2json Mimari URL):
+            </label>
+            <div class="feed-input-group">
+              <input type="url" 
+                     id="rss-url-input" 
+                     class="feed-input" 
+                     placeholder="Örn: https://medium.com/feed/tag/healthy-eating veya mahalle bülteni"
+                     value=""
+                     aria-describedby="feed-help-text">
+              <button type="button" id="btn-fetch-feed" class="btn btn-secondary feed-fetch-btn">
+                <span>Akışı Yenile</span>
+              </button>
+            </div>
+            <p id="feed-help-text" class="feed-help-text">
+              * Not: Kurgusal veri (Mock data) kesinlikle yasaktır. Dinamik veri kaynağına ulaşılamadığında veya besleme boş olduğunda doğrudan <em>"Veri mevcut değil"</em> uyarısı gösterilir.
+            </p>
+          </div>
+
+          <!-- Feed Content Output / Empty State Area -->
+          <div class="feed-results-area" id="feed-results-container" aria-live="polite">
+            <!-- Will show either live items OR strict "Veri mevcut değil" empty state -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="brand-logo footer-logo">
+            <span class="logo-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                <path d="M4 14C4 21 8.5 26 16 26C23.5 26 28 21 28 14H4Z" fill="#2D8A61"/>
+                <path d="M16 6C16 6 12 9 12 12H20C20 9 16 6 16 6Z" fill="#E06D3B"/>
+                <circle cx="16" cy="4" r="2" fill="#E06D3B"/>
+              </svg>
+            </span>
+            <span class="logo-title text-white">Teyzelerin Mutfak Panosu</span>
+          </div>
+          <p class="footer-desc">
+            Bu bir şirket veya yemek satış sitesi değildir. Plaza çalışanları ile mahallenin 3 teyzesini buluşturan, kâr amacı gütmeyen bir komşu panosudur.
+          </p>
+          <div class="footer-legal-tag">annemenu.com.tr &bull; Komşu Tezgahı</div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Pano Bölümleri</h4>
+          <ul class="footer-links">
+            <li><a href="#pano-kurallari">📌 Pano Kuralları (Pinned)</a></li>
+            <li><a href="#teyzeler">3 Mahalle Teyzesi</a></li>
+            <li><a href="#ornek-menu">Örnek Fit Menü</a></li>
+            <li><a href="#rehber-teyzeler">Teyzeler İçin Rehber</a></li>
+            <li><a href="#rehber-musteriler">Müşteri Tüketim Rehberi</a></li>
+          </ul>
+        </div>
+
+        <!-- Operational Info -->
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Pano Bilgileri</h4>
+          <p class="footer-text">
+            <strong>Bölgeler:</strong> Maslak, Levent, Ataşehir, Zincirlikuyu
+          </p>
+          <p class="footer-text">
+            <strong>Teslimat:</strong> 11:30 - 13:30 arası masaya teslim
+          </p>
+          <p class="footer-text">
+            <strong>Cut-off Kapanış:</strong> Pazar 17:00
+          </p>
+        </div>
+
+        <!-- Direct CTA Col -->
+        <div class="footer-cta-col">
+          <h4 class="footer-heading">Doğrudan İletişim</h4>
+          <p class="footer-text">3 Mahalle teyzemizle doğrudan görüşmek ve kayıt olmak için:</p>
+          <a href="#teyzeler" class="btn btn-whatsapp btn-full">
+            <span>Teyzelerin İlanlarını Gör</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Footer KVKK & KÂR AMACI GÜTMEZ Legal Statement Box -->
+      <div class="footer-kvkk-legal-box">
+        <div class="kvkk-badge-row">
+          <span class="badge-kar-amaci-gutmez">KÂR AMACI GÜTMEZ</span>
+          <span class="badge-brand-sub">Anne Menü &bull; Teyzelerin Mutfak Panosu</span>
+        </div>
+        <p class="kvkk-text">
+          <strong>KVKK / Veri:</strong> Bu site telefon numarası saklamaz, Excel tutmaz. Tüm iletişim WhatsApp grubu içindedir. Teyzelerin Mutfak Panosu sadece bilgilendirme panosudur. annemenu.com.tr bir komşu tezgahıdır.
+        </p>
+        <p class="kvkk-legal-text">
+          Bu tezgah sadece ilan panosu / topluluktur. Satıcı değil, aracı değil, komisyon yok, gelir yok. Marka sahiplenmesi yoktur. İlanların sorumluluğu ilan sahibi teyzeye aittir.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Anne Menü (annemenu.com.tr) &bull; Teyzelerin Mutfak Panosu &bull; Komşu Tezgahı.</p>
+        <p class="footer-disclaimer">
+          Hukuki Sorumluluk Reddi: Bu pano satışın tarafı değildir, komisyon almaz. Gıda güvenliği, hijyen, içerik ve teslimat sorumluluğu yemeği üreten teyzeye aittir.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Bottom Sticky CTA -->
+  <div class="mobile-sticky-cta" id="mobile-sticky-cta" aria-label="Mobil Hızlı İlan">
+    <div class="sticky-cta-content">
+      <div class="sticky-price-wrap">
+        <span class="sticky-pack-name">Teyzelerin Mutfak Panosu</span>
+        <span class="sticky-price">₺1.450 <small>(₺290/öğün &bull; %0 Komisyon)</small></span>
+      </div>
+      <a href="#teyzeler" class="btn btn-whatsapp sticky-btn" aria-label="Mahalle teyzelerini gör">
+        <span>Teyzeleri Gör</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="api-service.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
