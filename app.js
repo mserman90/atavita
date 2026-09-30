@@ -1,5 +1,5 @@
 /**
- * Anne Menü (annemenu.com.tr) - Teyzelerin Mutfak Panosu
+ * AtaVita (atavita.com.tr) - Teyzelerin Mutfak Panosu
  * UI & Etkileşim Yönetimi (Sıfır Komisyon, Doğrudan Teyze İletişimi)
  */
 
