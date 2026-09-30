@@ -1,5 +1,6 @@
 /**
- * Anne Menü (annemenu.com.tr) - API & Veri Entegrasyon Mimarisi
+ * AtaVita (atavita.com.tr) - API & Veri Entegrasyon Mimarisi
+ * Teyzelerin Mutfak Panosu
  * 
  * Kesin Yazılım & Mimari Standartları:
  * 1. Kurgusal Veri (Mock Data) Yasaktır: Hata durumunda uydurma veri üretilmez, "Veri mevcut değil" döndürülür.
@@ -15,7 +16,9 @@
   } else if (typeof module === 'object' && module.exports) {
     module.exports = factory();
   } else {
-    root.AnneMenuAPI = factory();
+    const api = factory();
+    root.AtaVitaAPI = api;
+    root.AnneMenuAPI = api;
   }
 }(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
